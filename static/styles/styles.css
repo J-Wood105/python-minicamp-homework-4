@@ -1,0 +1,24 @@
+body {
+  margin:0;
+  padding:0;
+  min-width:100%;
+}
+
+.container-fluid {
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.container-fluid .jumbotron {
+  border-radius: 0px;
+  margin-bottom:0px;
+}
+
+.top-hero {
+  height:400px;
+  height: 400px;
+  background-image: url('https://static.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

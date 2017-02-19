@@ -1,0 +1,32 @@
+{% include 'head.html' %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Movies</h1>
+      {% if message %}
+      <p>{{message}}</p>
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <ul class="list-group">
+          {% for movie in movies %}
+          <li class="list-group-item"><span class="badge">{{movie[1]}}</span>{{movie[0]}}</li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <a href="/">
+        <button class="btn btn-primary btn-block">Add A New Movie</button>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+{% include 'foot.html' %}

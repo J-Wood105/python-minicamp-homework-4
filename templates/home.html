@@ -1,0 +1,35 @@
+{% include 'head.html' %}
+<div class="top-hero">
+
+</div>
+<div class="container-fluid">
+  <div class="jumbotron">
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">ADD A MOVIE</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <form class="" action="/movie" method="POST">
+          <div class="form-group form-group-lg">
+            <label for="name">Movie Name</label>
+              <input type="text" name="name" value="" placeholder="Indiana Jones" class="form-control input-lg">
+          </div>
+          <div class="form-group form-group-lg">
+            <label for="rating">Movie Rating</label>
+              <input type="text" name="rating" value="" placeholder="1-5" class="form-control input-lg">
+          </div>
+          <div class="form-group form-group-lg">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitMovie">Submit</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+</div>
+
+{% include 'foot.html' %}
